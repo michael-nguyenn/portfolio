@@ -1,11 +1,10 @@
 import "./Navbar.scss";
-import { Fragment } from "react";
 
 function Navbar() {
   return (
-    <Fragment>
+    <header>
       <h1>Hello from nav</h1>
-    </Fragment>
+    </header>
   );
 }
 
