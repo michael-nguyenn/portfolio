@@ -17,6 +17,7 @@ function HomePage() {
         <Projects />
       </main> */}
       <Footer />
+      <div id="notifications"></div>
     </Fragment>
   );
 }
