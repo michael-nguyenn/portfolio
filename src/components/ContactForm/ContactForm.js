@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import './ContactForm.scss';
+import { useState } from 'react';
+import axios from 'axios';
 
 function ContactForm() {
   const [enteredEmail, setEnteredEmail] = useState('');
@@ -9,7 +10,21 @@ function ContactForm() {
   const sendMessageHandler = async (e) => {
     e.preventDefault();
 
-    console.log('boom, submitted');
+    try {
+      await axios.post(
+        'https://getform.io/f/528a1b66-bbd7-42f3-bf94-5cecad109dff',
+        {
+          name: enteredName,
+          email: enteredEmail,
+          message: enteredMessage,
+        }
+      );
+      setEnteredName('');
+      setEnteredEmail('');
+      setEnteredMessage('');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -29,7 +44,7 @@ function ContactForm() {
               placeholder="Name"
               required
               value={enteredName}
-              onChange={(event) => setEnteredName(event.target.value)}
+              onChange={(e) => setEnteredName(e.target.value)}
             />
           </div>
 
@@ -41,7 +56,7 @@ function ContactForm() {
               placeholder="Email"
               required
               value={enteredEmail}
-              onChange={(event) => setEnteredEmail(event.target.value)}
+              onChange={(e) => setEnteredEmail(e.target.value)}
             />
           </div>
         </div>
@@ -54,7 +69,7 @@ function ContactForm() {
             placeholder="Message"
             required
             value={enteredMessage}
-            onChange={(event) => setEnteredMessage(event.target.value)}
+            onChange={(e) => setEnteredMessage(e.target.value)}
           ></textarea>
         </div>
 

@@ -15,8 +15,8 @@ function HomePage() {
       <main>
         <About />
         <Projects />
-      </main>
-      <Footer /> */}
+      </main> */}
+      <Footer />
     </Fragment>
   );
 }
