@@ -1,1 +1,4 @@
-
+@use "./styles/global" as *;
+@use "./styles/mixin";
+@use "./styles/variables";
+@use "./styles/reset";
