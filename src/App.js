@@ -1,10 +1,15 @@
-import { Fragment } from "react";
+import "./App.scss";
+import HomePage from "./pages/HomePage";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Fragment>
-      <h1>Hello from App</h1>
-    </Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
