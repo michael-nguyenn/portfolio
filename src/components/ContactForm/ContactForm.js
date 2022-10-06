@@ -90,11 +90,13 @@ function ContactForm() {
             <input
               type="text"
               id="name"
+              className="form__input"
               placeholder="Name"
               required
               value={enteredName}
               onChange={(e) => setEnteredName(e.target.value)}
             />
+            <span>Please enter your name</span>
           </div>
 
           <div className="form__control">
@@ -102,11 +104,13 @@ function ContactForm() {
             <input
               type="email"
               id="email"
+              className="form__input"
               placeholder="Email"
               required
               value={enteredEmail}
               onChange={(e) => setEnteredEmail(e.target.value)}
             />
+            <span>Please enter a valid email address</span>
           </div>
         </div>
 
@@ -114,12 +118,14 @@ function ContactForm() {
           <label htmlFor="message"></label>
           <textarea
             id="message"
+            className="form__area"
             rows="5"
             placeholder="Message"
             required
             value={enteredMessage}
             onChange={(e) => setEnteredMessage(e.target.value)}
           ></textarea>
+          <span>Fill out something!</span>
         </div>
 
         <div className="form__action">

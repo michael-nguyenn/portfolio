@@ -1,0 +1,37 @@
+@use '../../styles/mixin' as *;
+
+.contact-form {
+  @include flex-layout(column, center, center);
+
+  &__header {
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  //   &__controls {
+  //     margin-bottom: 1rem;
+  //   }
+
+  &__control {
+    margin-bottom: 0.5rem;
+    @include flex-layout(column, center, center);
+  }
+
+  &__input {
+    padding: 0.25rem;
+  }
+
+  &__area {
+    padding: 0.25rem;
+  }
+
+  &__action {
+    @include flex-layout(row, center, center);
+  }
+}
