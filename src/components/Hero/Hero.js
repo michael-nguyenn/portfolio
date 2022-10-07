@@ -1,7 +1,5 @@
 import './Hero.scss';
 
-import { Fragment } from 'react';
-
 function Hero() {
   return (
     <section className="landing">

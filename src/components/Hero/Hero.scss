@@ -1,1 +1,36 @@
+.landing {
+  position: relative;
+  overflow: hidden;
 
+  &__author,
+  &__periods {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+  }
+
+  &__author {
+    background-color: lightpink;
+  }
+
+  &__periods {
+    background-color: black;
+    color: white;
+    font-size: 40vw;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__period {
+    width: 5vw;
+    height: 5vw;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 3rem;
+    display: inline-block;
+  }
+}
