@@ -27,18 +27,18 @@ function ContactForm() {
     setRequestStatus('pending');
 
     try {
-      //   console.log(
-      //     `Submitted! Name:${enteredName}, Email:${enteredEmail}, Message:${enteredMessage}`
-      //   );
-
-      await axios.post(
-        'https://getform.io/f/528a1b66-bbd7-42f3-bf94-5cecad109dff',
-        {
-          name: enteredName,
-          email: enteredEmail,
-          message: enteredMessage,
-        }
+      console.log(
+        `Submitted! Name:${enteredName}, Email:${enteredEmail}, Message:${enteredMessage}`
       );
+
+      //   await axios.post(
+      //     'https://getform.io/f/528a1b66-bbd7-42f3-bf94-5cecad109dff',
+      //     {
+      //       name: enteredName,
+      //       email: enteredEmail,
+      //       message: enteredMessage,
+      //     }
+      //   );
 
       setEnteredName('');
       setEnteredEmail('');

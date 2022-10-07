@@ -16,7 +16,7 @@ function HomePage() {
         <About />
         <Projects />
       </main> */}
-      {/* <Footer /> */}
+      <Footer />
       <div id="notifications"></div>
     </Fragment>
   );
