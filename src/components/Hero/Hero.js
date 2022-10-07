@@ -1,12 +1,21 @@
-import "./Hero.scss";
+import './Hero.scss';
 
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
 function Hero() {
   return (
-    <Fragment>
-      <h1>Hello from Hero</h1>
-    </Fragment>
+    <section className="landing">
+      <div className="landing__author">
+        <span className="landing__author-text">Michael Nguyen</span>
+      </div>
+
+      <div className="landing__periods">
+        <span className="landing__period"></span>
+        <span className="landing__period"></span>
+        <span className="landing__period"></span>
+        <span className="landing__period"></span>
+      </div>
+    </section>
   );
 }
 
