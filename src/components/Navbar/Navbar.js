@@ -1,9 +1,9 @@
-import "./Navbar.scss";
+import './Navbar.scss';
 
 function Navbar() {
   return (
     <header>
-      <h1>Hello from nav</h1>
+      <div></div>
     </header>
   );
 }

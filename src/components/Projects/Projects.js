@@ -1,11 +1,11 @@
-import "./Projects.scss";
+import './Projects.scss';
 
-import { Fragment } from "react";
+import { Fragment } from 'react';
 
 function Projects() {
   return (
     <Fragment>
-      <h1>hello from projects</h1>
+      <div></div>
     </Fragment>
   );
 }

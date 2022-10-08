@@ -10,12 +10,12 @@ import { Fragment } from 'react';
 function HomePage() {
   return (
     <Fragment>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
-      {/* <main>
+      <main>
         <About />
         <Projects />
-      </main> */}
+      </main>
       <Footer />
       <div id="notifications"></div>
     </Fragment>
