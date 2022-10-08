@@ -48,31 +48,37 @@ function Hero() {
   };
 
   const authorNameAnimation = () => {
-    gsap.to('.landing__first-name', {
-      y: -250,
-      immediateRender: false,
-      stagger: -0.1,
-      scrollTrigger: {
-        trigger: '.landing__author',
-        markers: true,
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 4,
-      },
-    });
+    gsap.fromTo(
+      '.landing__first-name',
+      { y: 0 },
+      {
+        y: -250,
+        stagger: -0.1,
+        scrollTrigger: {
+          trigger: '.landing__author',
+          markers: true,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: 3,
+        },
+      }
+    );
 
-    gsap.to('.landing__last-name', {
-      y: -250,
-      immediateRender: false,
-      stagger: -0.1,
-      scrollTrigger: {
-        trigger: '.landing__author',
-        markers: true,
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 4,
-      },
-    });
+    gsap.fromTo(
+      '.landing__last-name',
+      { y: 0 },
+      {
+        y: -250,
+        stagger: -0.1,
+        scrollTrigger: {
+          trigger: '.landing__author',
+          markers: true,
+          start: 'top top',
+          end: 'bottom  top',
+          scrub: 3,
+        },
+      }
+    );
   };
 
   useEffect(() => {
