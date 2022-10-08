@@ -1,6 +1,9 @@
 @use '../../styles/mixin' as *;
+@use '../../styles/variables' as *;
 
 .about {
+  background-color: $light-background;
+
   @include tablet {
     @include flex-layout(row, start, start);
     height: 100vh;
@@ -46,7 +49,11 @@
   }
 
   &__title {
+    @include header-typography;
+    color: $accent-color;
     margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
 
     @include desktop {
       font-size: 1.5rem;
@@ -54,9 +61,16 @@
   }
 
   &__intro {
-    margin-bottom: 1rem;
+    @include header-typography;
+    margin-bottom: 2rem;
     font-size: 2.5rem;
     line-height: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    &--name {
+      color: $primary-blue;
+    }
 
     @include desktop {
       font-size: 3.5rem;
@@ -64,8 +78,11 @@
   }
 
   &__description {
+    @include body-typography;
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
 
     @include desktop {
       font-size: 1.35rem;
@@ -74,18 +91,20 @@
   }
 
   &__resume {
+    @include header-typography;
     text-transform: uppercase;
-    border: 2px solid black;
-    border-radius: 2px;
-    color: black;
+    background-color: $dark-background;
+    color: $primary-blue;
     font-size: 1.2rem;
-    padding: 0.75rem 1.25rem;
-    transition: border 0.3s, color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    padding: 1rem 1.5rem;
+    transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s, border 0.3s;
+    position: relative;
+    overflow: hidden;
 
     &:hover {
-      color: blue;
-      border: 2px solid blue;
-      transform: scaleX(1.05);
+      color: $accent-color;
+      border: 2px solid $accent-color;
+      transform: scaleX(1.05) scaleY(1.05);
       transition: border 0.3s, color 0.3s, transform 0.3s,
         -webkit-transform 0.3s;
     }

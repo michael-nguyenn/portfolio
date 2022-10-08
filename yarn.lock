@@ -7991,6 +7991,11 @@ spdy@^4.0.2:
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
 
+split-type@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/split-type/-/split-type-0.3.2.tgz#b33eb8a62b9d7797bed680b21cc178fd297e44e1"
+  integrity sha512-lriNiO/Z9Uwnn/PL3PEfbRqkESQ5BlPqt0RjiRPQGY/tsfmmpIyITqw312Y5IoxW0l7etA1iHSAVrWUM2GeRhg==
+
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
