@@ -1,3 +1,5 @@
+@use '../../styles/mixin' as *;
+
 .landing {
   position: relative;
   overflow: hidden;
@@ -33,5 +35,10 @@
     border-radius: 50%;
     margin: 0 3rem;
     display: inline-block;
+  }
+
+  &__name {
+    @include header-typography;
+    font-size: 14rem;
   }
 }

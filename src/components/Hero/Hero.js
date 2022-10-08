@@ -85,20 +85,20 @@ function Hero() {
       <div className="landing__author">
         <p className="landing__name">
           <span className="landing__first-name">M</span>
-          <span className="landing__first-name">I</span>
-          <span className="landing__first-name">C</span>
-          <span className="landing__first-name">H</span>
-          <span className="landing__first-name">A</span>
-          <span className="landing__first-name">E</span>
-          <span className="landing__first-name">L</span>
+          <span className="landing__first-name">i</span>
+          <span className="landing__first-name">c</span>
+          <span className="landing__first-name">h</span>
+          <span className="landing__first-name">a</span>
+          <span className="landing__first-name">e</span>
+          <span className="landing__first-name">l</span>
         </p>
         <p className="landing__name">
           <span className="landing__last-name">N</span>
-          <span className="landing__last-name">G</span>
-          <span className="landing__last-name">U</span>
-          <span className="landing__last-name">Y</span>
-          <span className="landing__last-name">E</span>
-          <span className="landing__last-name">N</span>
+          <span className="landing__last-name">g</span>
+          <span className="landing__last-name">u</span>
+          <span className="landing__last-name">y</span>
+          <span className="landing__last-name">e</span>
+          <span className="landing__last-name">n</span>
         </p>
       </div>
       <p className="landing__periods">

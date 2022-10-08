@@ -1,4 +1,4 @@
-@use "./variables" as *;
+@use './variables' as *;
 
 @mixin list-reset {
   list-style: none;
@@ -32,4 +32,14 @@
   @media (min-width: $desktop-breakpoint) {
     @content;
   }
+}
+
+@mixin header-typography {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+@mixin body-typography {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
