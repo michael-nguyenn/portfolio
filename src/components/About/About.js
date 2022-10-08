@@ -13,18 +13,18 @@ function About() {
       </div>
 
       <div className="biography">
-        <h2 className="biography_title">ABOUT ME</h2>
-        <h1 className="biography_intro">Hey, I'm Michael!</h1>
+        <h3 className="biography__title">ABOUT ME</h3>
+        <h2 className="biography__intro">Hey, I'm Michael!</h2>
 
-        <p className="biography_description">
+        <p className="biography__description">
           Hello and welcome! I am a full-stack developer based in Toronto.
           Coming from the healthcare world, I am currently working as a
           Paramedic for the city of Toronto and looking to make a big splash in
           the world of web development!
         </p>
-        <p className="biography_description">
-          I am currently looking for new employment opportunities! Check out
-          some of my projects below :)
+        <p className="biography__description">
+          I am currently exploring new opportunities and excited for my next
+          challenge! Check out some of my projects below 🙂
         </p>
 
         <a

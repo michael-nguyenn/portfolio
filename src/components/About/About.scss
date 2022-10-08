@@ -1,1 +1,93 @@
+@use '../../styles/mixin' as *;
 
+.about {
+  @include tablet {
+    @include flex-layout(row, start, start);
+    height: 100vh;
+  }
+}
+
+.headshot {
+  margin-bottom: 1rem;
+
+  @include tablet {
+    width: 55rem;
+    margin: 0 2rem;
+    height: 100%;
+    @include flex-layout(column, center, center);
+  }
+
+  @include desktop {
+    margin-left: 15rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 18rem;
+    width: 18rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto;
+    object-fit: cover;
+  }
+}
+
+.biography {
+  @include flex-layout(column, center, flex-start);
+  padding: 1rem;
+
+  @include tablet {
+    height: 100%;
+    padding: 2rem;
+  }
+
+  @include desktop {
+    padding-right: 15rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__intro {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+
+    @include desktop {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+
+    @include desktop {
+      font-size: 1.35rem;
+      line-height: 2.2rem;
+    }
+  }
+
+  &__resume {
+    text-transform: uppercase;
+    border: 2px solid black;
+    border-radius: 2px;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0.75rem 1.25rem;
+    transition: border 0.3s, color 0.3s, transform 0.3s, -webkit-transform 0.3s;
+
+    &:hover {
+      color: blue;
+      border: 2px solid blue;
+      transform: scaleX(1.05);
+      transition: border 0.3s, color 0.3s, transform 0.3s,
+        -webkit-transform 0.3s;
+    }
+  }
+}
