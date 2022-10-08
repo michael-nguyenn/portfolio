@@ -1,5 +1,5 @@
 import './ContactForm.scss';
-import Notification from '../Notification/Notification';
+import Notification from '../..//Notification/Notification';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 

@@ -1,4 +1,4 @@
-@use '../../styles/mixin' as *;
+@use '../../../styles/mixin' as *;
 
 .contact-form {
   @include flex-layout(column, center, center);

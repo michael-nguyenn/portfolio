@@ -1,0 +1,51 @@
+@use '../../../styles/mixin' as *;
+@use '../../../styles/variables' as *;
+
+.contact-banner {
+  &__inner {
+    @include flex-layout(row, flex-start, flex-start);
+    padding: 1.5rem 0;
+    border-top: 1px solid $dark-background;
+    border-bottom: 1px solid $dark-background;
+    overflow: hidden;
+  }
+
+  &__content {
+    @include flex-layout(row, flex-start, flex-start);
+  }
+
+  &__description,
+  &__link {
+    @include header-typography;
+    color: $dark-background;
+    font-weight: 400;
+    font-size: 7vw;
+    letter-spacing: -0.45vw;
+    white-space: nowrap;
+
+    @include desktop {
+      font-size: 4vw;
+    }
+  }
+
+  &__description {
+    margin: 0 1.25rem;
+  }
+
+  &__link {
+    background-color: $dark-background;
+    color: $primary-blue;
+    padding: 0 1rem;
+    transition: color 0.3s;
+    font-size: 6.5vw;
+    letter-spacing: 0;
+
+    @include desktop {
+      font-size: 3.5vw;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
