@@ -2,17 +2,20 @@
 @use '../../../styles/variables' as *;
 
 .contact-banner {
+  overflow: hidden;
+
   &__inner {
     @include flex-layout(row, flex-start, flex-start);
     padding: 1.5rem 0;
     border-top: 1px solid $dark-background;
     border-bottom: 1px solid $dark-background;
-    overflow: hidden;
     background-color: $light-background;
   }
 
   &__content {
-    @include flex-layout(row, flex-start, flex-start);
+    @include flex-layout(row, space-around, center);
+    position: relative;
+    min-width: 100%;
   }
 
   &__description,
@@ -27,10 +30,6 @@
     @include desktop {
       font-size: 4vw;
     }
-  }
-
-  &__description {
-    margin: 0 1.25rem;
   }
 
   &__link {

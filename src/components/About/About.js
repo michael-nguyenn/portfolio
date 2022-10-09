@@ -65,7 +65,6 @@ function About() {
           start: 'top center',
           end: 'top top',
           scrub: 3,
-          markers: true,
           ease: Power4.easeInOut,
         },
       })

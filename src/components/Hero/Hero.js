@@ -56,7 +56,6 @@ function Hero() {
         stagger: -0.1,
         scrollTrigger: {
           trigger: '.landing__author',
-          markers: true,
           start: 'top top',
           end: 'bottom top',
           scrub: 3,
@@ -72,7 +71,6 @@ function Hero() {
         stagger: -0.1,
         scrollTrigger: {
           trigger: '.landing__author',
-          markers: true,
           start: 'top top',
           end: 'bottom  top',
           scrub: 3,
@@ -88,6 +86,12 @@ function Hero() {
 
   return (
     <section className="landing">
+      <div className="landing__stars">
+        <div className="landing__star1"></div>
+        <div className="landing__star2"></div>
+        <div className="landing__star3"></div>
+      </div>
+
       <div className="nav">
         <div className="nav__title">Menu</div>
       </div>
