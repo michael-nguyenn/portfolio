@@ -1,54 +1,62 @@
 [
   {
     "name": "HTML",
+    "id": 1,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/html5/html5-original.svg"
   },
   {
     "name": "CSS",
+    "id": 2,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original.svg"
   },
   {
     "name": "SCSS",
+    "id": 3,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/sass/sass-original.svg"
   },
   {
     "name": "JavaScript",
+    "id": 4,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg"
   },
   {
     "name": "TypeScript",
+    "id": 5,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg"
   },
   {
     "name": "React",
+    "id": 6,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg"
   },
   {
     "name": "Redux",
+    "id": 7,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/redux/redux-original.svg"
   },
   {
     "name": "Next.JS",
+    "id": 8,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original-wordmark.svg"
   },
   {
     "name": "Node.js",
+    "id": 9,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-plain.svg"
   },
   {
     "name": "Express",
+    "id": 10,
     "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/express/express-original.svg"
   },
   {
     "name": "MySQL",
+    "id": 11,
     "src": "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mysql/mysql-original.svg"
   },
   {
     "name": "MongoDB",
-    "src": "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mongodb/mongodb-original.svg"
-  },
-  {
-    "name": "Firebase",
-    "src": "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/firebase/firebase-plain.svg"
+    "id": 12,
+    "src": "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mongodb/mongodb-original-wordmark.svg"
   }
 ]

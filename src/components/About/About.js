@@ -96,7 +96,7 @@ function About() {
       </div>
 
       <div className="biography">
-        <h3 className="biography__title">ABOUT ME</h3>
+        <h2 className="biography__title">ABOUT ME</h2>
         <h2 className="biography__intro">
           Hey, I'm <span className="biography__intro--name">Michael!</span>
         </h2>

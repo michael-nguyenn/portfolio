@@ -1,0 +1,61 @@
+@use '../../styles/mixin' as *;
+@use '../../styles/variables' as *;
+
+.skills-section {
+  margin: 2rem 0;
+  @include tablet {
+    @include flex-layout(column, center, center);
+  }
+
+  @include desktop {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    @include header-typography;
+    color: $accent-color;
+    padding: 1rem;
+
+    @include tablet {
+      padding: 3rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+.skills {
+  @include flex-layout(row, center, center);
+  flex-wrap: wrap;
+  max-width: 478px;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1000px;
+  }
+
+  &__container {
+    margin: 0.5rem;
+
+    @include tablet {
+      margin: 1rem;
+    }
+
+    @include desktop {
+      margin: 1.5rem;
+    }
+  }
+
+  &__img {
+    height: 7rem;
+    width: 5rem;
+
+    @include tablet {
+      height: 8rem;
+      width: 6rem;
+    }
+  }
+}
