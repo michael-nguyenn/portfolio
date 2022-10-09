@@ -2,23 +2,33 @@
 @use '../../styles/variables' as *;
 
 .nav {
-  @include flex-layout(row, flex-end, center);
+  // @include flex-layout(row, flex-end, center);
   background-color: $dark-background;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+
+  @include tablet {
+    right: 3rem;
+    top: 3rem;
+  }
+
+  @include desktop {
+    right: 4rem;
+    top: 4rem;
+  }
 
   &__title {
     color: $primary-blue;
     @include body-typography;
     font-size: 1rem;
-    margin: 2rem 2rem 0 0;
 
     @include tablet {
       font-size: 2rem;
-      margin: 3rem 3rem 0 0;
     }
 
     @include desktop {
       font-size: 3rem;
-      margin: 4rem 4rem 0 0;
     }
   }
 }
@@ -38,6 +48,7 @@
     background-color: $dark-background;
     color: $light-background;
     font-size: 17vw;
+    @include flex-layout(column, center, center);
 
     @include tablet {
       font-size: 20vw;
@@ -108,16 +119,20 @@
     @include body-typography;
     color: $accent-color;
     font-size: 1rem;
-    margin-left: 2rem;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
 
     @include tablet {
       font-size: 2rem;
-      margin-left: 3rem;
+      left: 3rem;
+      bottom: 3rem;
     }
 
     @include desktop {
       font-size: 3rem;
-      margin-left: 4rem;
+      left: 4rem;
+      bottom: 4rem;
     }
   }
 
