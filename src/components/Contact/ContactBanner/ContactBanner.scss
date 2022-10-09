@@ -23,7 +23,6 @@
     @include header-typography;
     color: $dark-background;
     font-weight: 400;
-    font-size: 7vw;
     letter-spacing: -0.25vw;
     white-space: nowrap;
 
@@ -32,13 +31,17 @@
     }
   }
 
+  &__description {
+    font-size: 4vw;
+  }
+
   &__link {
     background-color: $dark-background;
     color: $primary-blue;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     transition: color 0.3s;
-    font-size: 6.5vw;
     letter-spacing: -0.1vw;
+    font-size: 3vw;
 
     @include desktop {
       font-size: 3.5vw;
