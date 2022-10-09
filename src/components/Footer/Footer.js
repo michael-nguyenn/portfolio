@@ -3,6 +3,7 @@ import ContactBanner from '../Contact/ContactBanner/ContactBanner';
 
 import './Footer.scss';
 import ContactSection from '../Contact/ContactSection/ContactSection';
+import ContactFooter from '../Contact/ContactFooter/ContactFooter';
 
 function Footer() {
   return (
@@ -10,6 +11,7 @@ function Footer() {
       {/* <ContactForm /> */}
       <ContactBanner />
       <ContactSection />
+      <ContactFooter />
     </footer>
   );
 }

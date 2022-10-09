@@ -1,0 +1,11 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/mixin' as *;
+
+.contact-footer {
+  background-color: $dark-background;
+  height: 10vh;
+
+  @include desktop {
+    height: 15vh;
+  }
+}
