@@ -4,8 +4,10 @@
 .contact-footer {
   background-color: $dark-background;
   height: 10vh;
+  overflow: hidden;
+  position: relative;
 
   @include desktop {
-    height: 15vh;
+    height: 17vh;
   }
 }

@@ -27,7 +27,7 @@ function ContactSection() {
           className="contact__link"
         >
           <img
-            src="https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/linkedin/linkedin-plain.svg"
+            src="https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/linkedin/linkedin-original.svg"
             alt="GitHub Icon"
             className="contact__img"
           />
@@ -41,7 +41,11 @@ function ContactSection() {
           href="mailto:n93michael@gmail.com?subject=Getting%20In%20Touch"
           className="contact__link"
         >
-          <img src={emailIcon} alt="Icon of Mail" className="contact__img" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+            alt="Icon of Mail"
+            className="contact__img"
+          />
         </a>
       </div>
     </section>

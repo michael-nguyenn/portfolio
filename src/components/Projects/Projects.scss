@@ -1,0 +1,50 @@
+@use '../../styles/mixin' as *;
+@use '../../styles/variables' as *;
+
+.projects {
+  &__header {
+    padding: 1rem;
+    @include header-typography;
+  }
+}
+
+.project {
+  @include flex-layout(column, center, center);
+  color: white;
+
+  &__wrapper {
+    margin: 0.5rem;
+    padding: 1rem;
+    box-shadow: rgb(0 0 0 / 40%) 0px 10px 14px -5px;
+    border-radius: 10px;
+  }
+
+  &__header {
+    @include header-typography;
+    margin: 1rem 0;
+  }
+
+  &__description {
+    @include header-typography;
+    margin-bottom: 1rem;
+  }
+
+  &__buttons {
+    @include header-typography;
+    @include flex-layout(row, center, center);
+  }
+
+  &__link {
+    color: $light-background;
+    margin: 1rem 1rem 2rem 1rem;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    box-shadow: rgb(0 0 0 / 30%) 0px 4px 14px -1px;
+    border-radius: 5px;
+  }
+
+  &__img {
+    margin-bottom: 2rem;
+    border-radius: 6px;
+  }
+}

@@ -2,7 +2,6 @@
 @use '../../styles/variables' as *;
 
 .nav {
-  // @include flex-layout(row, flex-end, center);
   background-color: $dark-background;
   position: absolute;
   right: 2rem;

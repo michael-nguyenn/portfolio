@@ -2,6 +2,9 @@
 @use '../../../styles/variables' as *;
 
 .contact {
+  height: 20vh;
+  @include flex-layout(column, center, center);
+
   &__header {
     @include header-typography;
     color: $accent-color;
@@ -15,6 +18,6 @@
   &__img {
     height: 3rem;
     width: 3rem;
-    margin: 1rem;
+    margin: 2rem;
   }
 }

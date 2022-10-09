@@ -2,7 +2,9 @@
 @use '../../styles/variables' as *;
 
 .skills-section {
-  margin: 2rem 0;
+  background-color: $light-background;
+  padding: 2rem 0;
+
   @include tablet {
     @include flex-layout(column, center, center);
   }
