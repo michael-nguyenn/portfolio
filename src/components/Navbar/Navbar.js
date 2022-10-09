@@ -3,7 +3,9 @@ import './Navbar.scss';
 function Navbar() {
   return (
     <header>
-      <div></div>
+      <div className="menu">
+        <div className="menu__title">Menu</div>
+      </div>
     </header>
   );
 }

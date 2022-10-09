@@ -1,6 +1,28 @@
 @use '../../styles/mixin' as *;
 @use '../../styles/variables' as *;
 
+.nav {
+  @include flex-layout(row, flex-end, center);
+  background-color: $dark-background;
+
+  &__title {
+    color: $primary-blue;
+    @include body-typography;
+    font-size: 1rem;
+    margin: 2rem 2rem 0 0;
+
+    @include tablet {
+      font-size: 2rem;
+      margin: 3rem 3rem 0 0;
+    }
+
+    @include desktop {
+      font-size: 3rem;
+      margin: 4rem 4rem 0 0;
+    }
+  }
+}
+
 .landing {
   position: relative;
   overflow: hidden;
@@ -14,10 +36,13 @@
   &__author {
     background-color: $dark-background;
     color: $light-background;
-    padding: 5rem 8rem;
+    font-size: 17vw;
+
+    @include tablet {
+      font-size: 20vw;
+    }
 
     @include desktop {
-      padding-top: 12rem;
     }
   }
 
@@ -42,6 +67,8 @@
 
   &__name {
     @include header-typography;
+    letter-spacing: -0.2vw;
+    line-height: 90%;
 
     @include desktop {
       font-size: 16rem;
@@ -50,5 +77,46 @@
     }
 
     @include flex-layout(row, center, center);
+
+    &--top {
+      padding: 5rem 4rem 0 0;
+
+      @include tablet {
+        padding: 7rem 4rem 0 0;
+      }
+
+      @include desktop {
+        padding: 9rem 7rem 0 0;
+      }
+    }
+
+    &--bottom {
+      padding: 0 0 5rem 4rem;
+
+      @include tablet {
+        padding: 0 0 7rem 4rem;
+      }
+
+      @include desktop {
+        padding: 0 0 9rem 7rem;
+      }
+    }
+  }
+
+  &__scroll {
+    @include body-typography;
+    color: $accent-color;
+    font-size: 1rem;
+    margin-left: 2rem;
+
+    @include tablet {
+      font-size: 2rem;
+      margin-left: 3rem;
+    }
+
+    @include desktop {
+      font-size: 3rem;
+      margin-left: 4rem;
+    }
   }
 }

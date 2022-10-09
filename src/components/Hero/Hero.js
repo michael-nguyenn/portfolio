@@ -88,8 +88,12 @@ function Hero() {
 
   return (
     <section className="landing">
+      <div className="nav">
+        <div className="nav__title">Menu</div>
+      </div>
+
       <div className="landing__author">
-        <p className="landing__name">
+        <p className="landing__name landing__name--top">
           <span className="landing__first-name">M</span>
           <span className="landing__first-name">i</span>
           <span className="landing__first-name">c</span>
@@ -98,7 +102,7 @@ function Hero() {
           <span className="landing__first-name">e</span>
           <span className="landing__first-name">l</span>
         </p>
-        <p className="landing__name">
+        <p className="landing__name landing__name--bottom">
           <span className="landing__last-name">N</span>
           <span className="landing__last-name">g</span>
           <span className="landing__last-name">u</span>
@@ -106,6 +110,8 @@ function Hero() {
           <span className="landing__last-name">e</span>
           <span className="landing__last-name">n</span>
         </p>
+
+        <p className="landing__scroll">Scroll</p>
       </div>
       <p className="landing__periods">
         <span className="landing__period"></span>

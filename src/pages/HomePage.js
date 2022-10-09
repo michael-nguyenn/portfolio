@@ -11,7 +11,7 @@ import { Fragment } from 'react';
 function HomePage() {
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <main>
         <About />
