@@ -1,0 +1,20 @@
+@use '../../../styles/mixin' as *;
+@use '../../../styles/variables' as *;
+
+.contact {
+  &__header {
+    @include header-typography;
+    color: $accent-color;
+    padding: 2rem;
+  }
+
+  &__container {
+    @include flex-layout(row, center, center);
+  }
+
+  &__img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+  }
+}
