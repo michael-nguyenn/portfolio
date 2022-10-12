@@ -3,11 +3,7 @@
 
 .skills-section {
   background-color: $light-background;
-  padding: 2rem 0;
-
-  @include tablet {
-    @include flex-layout(column, center, center);
-  }
+  padding-top: 2rem;
 
   @include desktop {
     margin-bottom: 2rem;
@@ -30,9 +26,13 @@
   flex-wrap: wrap;
   max-width: 478px;
   margin: 0 auto;
+  position: relative;
+  min-height: 800px;
+  margin-top: 2rem;
 
   @include tablet {
     max-width: 768px;
+    min-height: 900px;
   }
 
   @include desktop {
@@ -58,6 +58,113 @@
     @include tablet {
       height: 8rem;
       width: 6rem;
+    }
+  }
+}
+
+.icon {
+  &-javascript {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-typescript {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-html {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-react {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include desktop {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &-nodejs {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-mongodb {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-css {
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-scss {
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-nextjs {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-redux {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-express {
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-mysql {
+    position: absolute;
+    top: 65%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-firebase {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include desktop {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      transform: translate(150%, -50%);
     }
   }
 }

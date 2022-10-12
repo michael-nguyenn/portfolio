@@ -68,12 +68,18 @@
   }
 
   &__period {
-    width: 5vw;
-    height: 5vw;
+    width: 2rem;
+    height: 2rem;
     background-color: $dark-background;
     border-radius: 50%;
-    margin: 0 3rem;
+    margin: 0 1rem;
     display: inline-block;
+
+    @include tablet {
+      margin: 0 3rem;
+      width: 5vw;
+      height: 5vw;
+    }
   }
 
   &__name {

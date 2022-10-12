@@ -9,6 +9,10 @@ import Skills from '../components/Skills/Skills';
 import { Fragment } from 'react';
 
 function HomePage() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <Fragment>
       {/* <Navbar /> */}
