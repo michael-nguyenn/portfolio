@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Test Project",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio porttitor, mollis tortor sed, posuere velit. Sed facilisis accumsan enim non scelerisque. Phasellus sit amet dolor nec quam commodo tristique.",
+    "siteLink": "https://github.com/michael-nguyenn",
+    "repoLink": "https://github.com/michael-nguyenn",
+    "projectImg": "https://firebasestorage.googleapis.com/v0/b/portfolio-f52f4.appspot.com/o/sunrise-colorful-mounains-landscape-minimalist-minimalism-y7316.jpeg?alt=media&token=fac7dfd6-3e48-4772-941b-a99f8a8603d7",
+    "techStack": [
+      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original-wordmark.svg",
+      "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mongodb/mongodb-original-wordmark.svg"
+    ],
+    "background": "linear-gradient(#e66465, #9198e5)"
+  }
+]

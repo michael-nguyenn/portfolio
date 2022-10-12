@@ -47,4 +47,14 @@
     margin-bottom: 2rem;
     border-radius: 6px;
   }
+
+  &__stack {
+    @include flex-layout(row, center, center);
+  }
+
+  &__icon {
+    height: 3.2rem;
+    width: 3.2rem;
+    padding: 0.5rem;
+  }
 }
