@@ -42,6 +42,9 @@ function Hero() {
           opacity: 0,
           stagger: 0.1,
           ease: Power4.easeOut,
+          onComplete: () => {
+            document.body.style.overflow = 'visible';
+          },
         },
         '-=0.5'
       );

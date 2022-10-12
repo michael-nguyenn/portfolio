@@ -15,16 +15,6 @@ function About() {
       absolute: true,
     });
 
-    const introText = new SplitType('.biography__intro', {
-      types: 'words',
-      absolute: true,
-    });
-
-    const descriptionText = new SplitType('.biography__description', {
-      types: 'words',
-      absolute: true,
-    });
-
     //Animate Text
     gsap
       .timeline({
@@ -41,12 +31,16 @@ function About() {
         duration: 1,
         stagger: 0.1,
       })
-      .from(introText.words, {
+      .from('.biography__intro > span', {
         y: 60,
         duration: 1,
         stagger: 0.1,
       })
-      .from(descriptionText.words, {
+      .from('.biography__description--first span', {
+        y: 400,
+        duration: 1,
+      })
+      .from('.biography__description--second span', {
         y: 400,
         duration: 1,
       })
@@ -97,18 +91,23 @@ function About() {
       <div className="biography">
         <h2 className="biography__title">ABOUT ME</h2>
         <h2 className="biography__intro">
-          Hey, I'm <span className="biography__intro--name">Michael!</span>
+          <span>Hey, I'm</span>
+          <span className="biography__intro--name"> Michael!</span>
         </h2>
 
-        <p className="biography__description">
-          Hello and welcome! I am a full-stack developer based in Toronto.
-          Coming from the healthcare world, I am currently working as a
-          Paramedic for the city of Toronto and looking to make a big splash in
-          the world of web development!
+        <p className="biography__description biography__description--first">
+          <span>
+            Hello and welcome! I am a full-stack developer based in Toronto.
+            Coming from the healthcare world, I am currently working as a
+            Paramedic for the city of Toronto and looking to make a big splash
+            in the world of web development!
+          </span>
         </p>
-        <p className="biography__description">
-          I am currently exploring new opportunities and excited for my next
-          challenge! Check out some of my projects below 🙂
+        <p className="biography__description biography__description--second">
+          <span>
+            I am currently exploring new opportunities and excited for my next
+            challenge! Check out some of my projects below 🙂
+          </span>
         </p>
 
         <a

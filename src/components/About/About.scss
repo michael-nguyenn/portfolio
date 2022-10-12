@@ -70,6 +70,7 @@
 
     &--name {
       color: $primary-blue;
+      white-space: pre;
     }
 
     @include desktop {
@@ -83,6 +84,7 @@
     font-size: 1.1rem;
     position: relative;
     overflow: hidden;
+    font-kerning: none;
 
     @include desktop {
       font-size: 1.35rem;
