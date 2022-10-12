@@ -15,47 +15,51 @@ function Projects() {
                 background: `${project.background}`,
               }}
             >
-              <h3 className="project__header">{project.name}</h3>
-              <p className="project__description">{project.description}</p>
+              <div className="project__left">
+                <h3 className="project__header">{project.name}</h3>
+                <p className="project__description">{project.description}</p>
 
-              <div className="project__buttons">
-                <a
-                  href={project.siteLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project__link"
-                >
-                  Live Site
-                </a>
+                <div className="project__buttons">
+                  <a
+                    href={project.siteLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project__link"
+                  >
+                    Live Site
+                  </a>
 
-                <a
-                  href={project.repoLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="project__link"
-                >
-                  Repo
-                </a>
+                  <a
+                    href={project.repoLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="project__link"
+                  >
+                    Repo
+                  </a>
+                </div>
               </div>
 
-              <img
-                src={project.projectImg}
-                alt="placeholder"
-                className="project__img"
-              />
+              <div className="project__right">
+                <img
+                  src={project.projectImg}
+                  alt="placeholder"
+                  className="project__img"
+                />
 
-              <div className="project__tech">
-                <span className="project__title">Tech Stack:</span>
-                <div className="project__stack">
-                  {project.techStack.map((tech) => {
-                    return (
-                      <img
-                        className="project__icon"
-                        src={tech}
-                        alt="tech stack icon"
-                      />
-                    );
-                  })}
+                <div className="project__tech">
+                  <span className="project__title">Tech Stack:</span>
+                  <div className="project__stack">
+                    {project.techStack.map((tech) => {
+                      return (
+                        <img
+                          className="project__icon"
+                          src={tech}
+                          alt="tech stack icon"
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

@@ -2,31 +2,67 @@
 @use '../../styles/variables' as *;
 
 .projects {
+  padding: 2rem 0;
   &__header {
     padding: 1rem;
     @include header-typography;
+    color: $accent-color;
+    font-size: 1.5rem;
+
+    @include desktop {
+      padding: 3rem;
+      font-size: 2rem;
+    }
   }
 }
 
 .project {
   @include flex-layout(column, center, center);
   color: white;
+  margin-bottom: 2rem;
+
+  @include tablet {
+    padding: 2rem 6rem;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    padding: 2rem 11rem;
+  }
 
   &__wrapper {
     margin: 0.5rem;
     padding: 1rem;
     box-shadow: rgb(0 0 0 / 40%) 0px 10px 14px -5px;
     border-radius: 10px;
+    max-width: 500px;
+
+    @include tablet {
+      max-width: 1000px;
+      @include flex-layout(row, flex-start, center);
+    }
+
+    @include desktop {
+      max-width: 1280px;
+    }
   }
 
   &__header {
     @include header-typography;
     margin: 1rem 0;
+
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
 
   &__description {
     @include header-typography;
     margin-bottom: 1rem;
+
+    @include desktop {
+      font-size: 1.25rem;
+    }
   }
 
   &__buttons {
@@ -46,15 +82,49 @@
   &__img {
     margin-bottom: 2rem;
     border-radius: 6px;
+    padding: 0 1rem;
+
+    @include tablet {
+      padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+  }
+
+  &__title {
+    @include header-typography;
+    margin-bottom: 1rem;
   }
 
   &__stack {
-    @include flex-layout(row, center, center);
+    @include flex-layout(row, space-between, center);
   }
 
   &__icon {
-    height: 3.2rem;
-    width: 3.2rem;
-    padding: 0.5rem;
+    height: 3rem;
+    width: 3rem;
+
+    @include desktop {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &__left {
+    @include tablet {
+      width: 50%;
+    }
+
+    @include desktop {
+      padding: 2rem;
+    }
+  }
+
+  &__right {
+    @include tablet {
+      width: 50%;
+    }
+
+    @include desktop {
+      padding: 2rem;
+    }
   }
 }
