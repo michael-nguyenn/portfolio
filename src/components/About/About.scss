@@ -3,6 +3,7 @@
 
 .about {
   background-color: $light-background;
+  padding: 2.5rem;
 
   @include tablet {
     @include flex-layout(row, start, start);
