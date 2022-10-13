@@ -1,4 +1,5 @@
 import './Hero.scss';
+import HamburgerMenu from '../Menu/Menu';
 import { useEffect } from 'react';
 import gsap, { Power4 } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -59,7 +60,7 @@ function Hero() {
         stagger: -0.1,
         scrollTrigger: {
           trigger: '.landing__author',
-          start: 'top top',
+          start: '10% top',
           end: 'bottom top',
           scrub: 3,
         },
@@ -74,7 +75,7 @@ function Hero() {
         stagger: -0.1,
         scrollTrigger: {
           trigger: '.landing__author',
-          start: 'top top',
+          start: '10% top',
           end: 'bottom  top',
           scrub: 3,
         },
@@ -97,6 +98,7 @@ function Hero() {
 
       <div className="nav">
         <div className="nav__title">Menu</div>
+        <HamburgerMenu />
       </div>
 
       <div className="landing__author">
