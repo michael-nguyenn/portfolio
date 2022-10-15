@@ -11,3 +11,32 @@
     height: 17vh;
   }
 }
+
+.contact-credit {
+  &__hand {
+    height: 80px;
+    width: 120px;
+    position: absolute;
+
+    &--right {
+      top: -10%;
+      right: 0;
+      transform: scaleX(-1) rotate(45deg);
+    }
+
+    &--left {
+      bottom: -10%;
+      left: 0;
+      transform: rotate(-28deg);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $accent-color;
+    @include body-typography;
+  }
+}
