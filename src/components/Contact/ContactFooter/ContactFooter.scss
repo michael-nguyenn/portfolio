@@ -3,31 +3,30 @@
 
 .contact-footer {
   background-color: $dark-background;
-  height: 10vh;
+  height: 90px;
   overflow: hidden;
   position: relative;
 
   @include desktop {
-    height: 17vh;
   }
 }
 
 .contact-credit {
   &__hand {
-    height: 80px;
+    height: 70px;
     width: 120px;
     position: absolute;
 
     &--right {
-      top: -10%;
-      right: 0;
-      transform: scaleX(-1) rotate(45deg);
+      top: -15%;
+      right: 50%;
+      transform: scaleX(-1) rotate(26deg) translate(-138%, 116%);
     }
 
     &--left {
-      bottom: -10%;
-      left: 0;
-      transform: rotate(-28deg);
+      bottom: -25%;
+      left: 50%;
+      transform: rotate(-22deg) TRANSLATE(-140%, -97%);
     }
   }
 
