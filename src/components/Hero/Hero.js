@@ -1,11 +1,11 @@
 import './Hero.scss';
-import HamburgerMenu from '../Menu/Menu';
+import Menu from '../Menu/Menu';
 import { useEffect } from 'react';
 import gsap, { Power4 } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-function Hero() {
+function Hero({ aboutRef, skillsRef, projectsRef, contactRef, scroll }) {
   const headerAnimation = () => {
     //Initialize timeline
     const tl = gsap.timeline();
@@ -97,8 +97,14 @@ function Hero() {
       </div>
 
       <div className="nav">
-        <div className="nav__title">Menu</div>
-        {/* <HamburgerMenu /> */}
+        {/* <div className="nav__title">Menu</div> */}
+        <Menu
+          aboutRef={aboutRef}
+          projectsRef={projectsRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+          scroll={scroll}
+        />
       </div>
 
       <div className="landing__author">

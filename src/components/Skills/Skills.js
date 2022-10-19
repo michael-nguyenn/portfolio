@@ -3,7 +3,7 @@ import skills from '../../data/skills.json';
 import { useEffect } from 'react';
 import gsap, { Power4 } from 'gsap';
 
-function Skills() {
+function Skills({ skillsRef }) {
   const animateSkills = () => {
     //initialize timeline
     const tl = gsap.timeline({
@@ -158,7 +158,7 @@ function Skills() {
   });
 
   return (
-    <section className="skills-section">
+    <section className="skills-section" id="skills" ref={skillsRef}>
       <h2 className="skills-section__title">SKILLS</h2>
       <div className="skills">
         {skills.map((skill) => {

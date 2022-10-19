@@ -5,22 +5,37 @@ import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer/Footer';
 import Skills from '../components/Skills/Skills';
 
-import { Fragment } from 'react';
+import { Fragment, useRef } from 'react';
 
 function HomePage() {
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   };
 
+  const scroll = (section) => {
+    section.current.scrollIntoView();
+  };
+
   return (
     <Fragment>
-      <Hero />
+      <Hero
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        skillsRef={skillsRef}
+        contactRef={contactRef}
+        scroll={scroll}
+      />
       <main>
-        <About />
-        <Projects />
-        <Skills />
+        <About aboutRef={aboutRef} />
+        <Projects projectsRef={projectsRef} />
+        <Skills skillsRef={skillsRef} />
       </main>
-      <Footer />
+      <Footer contactRef={contactRef} />
       <div id="notifications"></div>
     </Fragment>
   );

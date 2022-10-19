@@ -5,9 +5,9 @@ import './Footer.scss';
 import ContactSection from '../Contact/ContactSection/ContactSection';
 import ContactFooter from '../Contact/ContactFooter/ContactFooter';
 
-function Footer() {
+function Footer({ contactRef }) {
   return (
-    <footer>
+    <footer id="contact" ref={contactRef}>
       {/* <ContactForm /> */}
       <ContactBanner />
       <ContactSection />

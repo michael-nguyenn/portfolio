@@ -6,7 +6,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 gsap.registerPlugin(ScrollTrigger);
 
-function About() {
+function About({ aboutRef }) {
   //Create animation for text
   const animateText = () => {
     //Split All Text
@@ -79,7 +79,7 @@ function About() {
   });
 
   return (
-    <section className="about">
+    <section className="about" id="about" ref={aboutRef}>
       <div className="headshot">
         <img
           className="headshot__img"

@@ -1,9 +1,9 @@
 import './Projects.scss';
 import projects from '../../data/projects.json';
 
-function Projects() {
+function Projects({ projectsRef }) {
   return (
-    <section className="projects">
+    <section className="projects" id="projects" ref={projectsRef}>
       <h3 className="projects__header">PROJECTS</h3>
 
       {projects.map((project) => {
