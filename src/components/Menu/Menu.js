@@ -2,34 +2,48 @@ import './Menu.scss';
 
 const Menu = ({ aboutRef, projectsRef, skillsRef, contactRef, scroll }) => {
   return (
-    <nav>
-      <ul>
-        <li onClick={() => scroll(aboutRef)} href="about">
+    <nav className="menu">
+      <ul className="menu__list">
+        <li
+          className="menu__item"
+          onClick={() => scroll(aboutRef)}
+          href="about"
+        >
           About Me
         </li>
 
-        <li onClick={() => scroll(projectsRef)} href="projects">
+        <li
+          className="menu__item"
+          onClick={() => scroll(projectsRef)}
+          href="projects"
+        >
           Projects
         </li>
 
-        <li onClick={() => scroll(skillsRef)} href="skills">
+        <li
+          className="menu__item"
+          onClick={() => scroll(skillsRef)}
+          href="skills"
+        >
           Skills
         </li>
 
-        <li onClick={() => scroll(contactRef)} href="contact">
+        <li
+          className="menu__item"
+          onClick={() => scroll(contactRef)}
+          href="contact"
+        >
           Contact
         </li>
 
-        <li>
-          <a
-            href="/michael-nguyen-resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className=""
-          >
-            Résumé
-          </a>
-        </li>
+        <a
+          href="/michael-nguyen-resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          className="menu__resume"
+        >
+          Résumé
+        </a>
       </ul>
     </nav>
   );
