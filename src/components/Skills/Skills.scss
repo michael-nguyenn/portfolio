@@ -54,10 +54,28 @@
   &__img {
     height: 7rem;
     width: 5rem;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 
     @include tablet {
       height: 8rem;
       width: 6rem;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+      transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
     }
   }
 }
