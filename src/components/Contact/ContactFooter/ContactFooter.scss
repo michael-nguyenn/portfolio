@@ -37,5 +37,39 @@
     transform: translate(-50%, -50%);
     color: $accent-color;
     @include body-typography;
+
+    &:hover,
+    &:active,
+    &:active {
+      -webkit-animation-name: hvr-buzz;
+      animation-name: hvr-buzz;
+      -webkit-animation-duration: 0.15s;
+      animation-duration: 0.15s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
   }
 }
+
+// @-webkit-keyframes hvr-buzz {
+//   50% {
+//     -webkit-transform: translateX(1.2px) rotate(1.2deg);
+//     transform: translateX(1.2px) rotate(1.2deg);
+//   }
+//   100% {
+//     -webkit-transform: translateX(-1.4px) rotate(-1.2deg);
+//     transform: translateX(-1.4px) rotate(-1.3deg);
+//   }
+// }
+// @keyframes hvr-buzz {
+//   50% {
+//     -webkit-transform: translateX(1.2px) rotate(1.2deg);
+//     transform: translateX(1.2px) rotate(1.2deg);
+//   }
+//   100% {
+//     -webkit-transform: translateX(-1.2px) rotate(-1.2deg);
+//     transform: translateX(-1.2px) rotate(-1.2deg);
+//   }
+// }
