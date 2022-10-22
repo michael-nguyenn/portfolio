@@ -97,7 +97,7 @@ function Hero() {
       </div>
 
       <div className="nav">
-        <div className="nav__title">Menu</div>
+        {/* <div className="nav__title">Menu</div> */}
         {/* <HamburgerMenu /> */}
       </div>
 

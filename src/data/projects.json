@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Test Project",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio porttitor, mollis tortor sed, posuere velit. Sed facilisis accumsan enim non scelerisque. Phasellus sit amet dolor nec quam commodo tristique.",
-    "siteLink": "https://github.com/michael-nguyenn",
-    "repoLink": "https://github.com/michael-nguyenn",
-    "projectImg": "https://firebasestorage.googleapis.com/v0/b/portfolio-f52f4.appspot.com/o/sunrise-colorful-mounains-landscape-minimalist-minimalism-y7316.jpeg?alt=media&token=fac7dfd6-3e48-4772-941b-a99f8a8603d7",
+    "name": "Give Me Food",
+    "description": "A website where I share all my favorite recipes! The application is responsive and utilizes the functionality of Next.JS. The application has featured posts and the ability to render markdown files",
+    "siteLink": "https://givemefood.vercel.app/",
+    "repoLink": "https://github.com/michael-nguyenn/give-me-food",
+    "projectImg": "https://firebasestorage.googleapis.com/v0/b/portfolio-f52f4.appspot.com/o/give-me-food.png?alt=media&token=7df1da16-256e-4291-b4bc-fea5ee4b54d7",
     "techStack": [
       "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg",
       "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original.svg",
@@ -13,22 +13,6 @@
       "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original-wordmark.svg",
       "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mongodb/mongodb-original-wordmark.svg"
     ],
-    "background": "linear-gradient(#e66465, #9198e5)"
-  },
-  {
-    "id": 2,
-    "name": "Second Test Project",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac odio porttitor, mollis tortor sed, posuere velit. Sed facilisis accumsan enim non scelerisque. Phasellus sit amet dolor nec quam commodo tristique.",
-    "siteLink": "https://github.com/michael-nguyenn",
-    "repoLink": "https://github.com/michael-nguyenn",
-    "projectImg": "https://firebasestorage.googleapis.com/v0/b/portfolio-f52f4.appspot.com/o/sunset-sea-sunset-mountains-landscape-minimalist-minimalism-y737.jpeg?alt=media&token=c23caa2c-f54a-4814-9dfc-8579e4c6c152",
-    "techStack": [
-      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/javascript/javascript-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/css3/css3-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nextjs/nextjs-original-wordmark.svg",
-      "https://raw.githubusercontent.com/devicons/devicon/v2.15.1/icons/mongodb/mongodb-original-wordmark.svg"
-    ],
-    "background": "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,94,121,1) 35%, rgba(0,212,255,1) 100%)"
+    "background": "linear-gradient(hsl(265, 4%, 85%), hsl(265, 4%, 65%))"
   }
 ]
